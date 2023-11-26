@@ -452,6 +452,14 @@ footer {
     display: flex;
     flex-direction: column;
 
+    h2 {
+      margin: auto;
+      margin-bottom: 2rem;
+      background-color: #151515;
+      padding: .5rem;
+      border-radius: .5rem;
+    }
+
     input,
     textarea {
       width: 100%;

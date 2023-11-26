@@ -71,7 +71,7 @@ export default function ADD_PROJECT() {
         <p>upload image</p>
         <input ref={imgInput} onChange={(e) => {
           if (imgSours) return;
-          uploadFile(e) 
+          uploadFile(e)
           dataHandler(e)
           }} type="file"  name="img" accept='images' />
       </label>

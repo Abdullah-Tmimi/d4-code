@@ -47,7 +47,10 @@ export default function AllRoutes() {
         <Route path="/projects/:name" element={
         <EntryAnimation elements={<>{data && <Project data={data} />}<Footer /></>}/>
         }/>
-        <Route path="/contact" element={<EntryAnimation elements={<><Contact /></>}/>
+        <Route path="/contact" element={<EntryAnimation elements={<>
+          <Contact />
+          <Footer />
+        </>}/>
         }/>
        <Route path="/add" element={ <EntryAnimation elements={ <ADD_PROJECT />}/>}/>
        <Route path="/admin" element={<EntryAnimation elements={<> <ADD_PROJECT /> { data && <Admin data={data}/> } <Footer /> </>}/>}/>
